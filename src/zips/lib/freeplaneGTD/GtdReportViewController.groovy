@@ -108,7 +108,7 @@ class GtdReportViewController {
                                 actionPerformed: { refreshContent() }
                         )
                     }
-                    scrollPane(constraints: BorderLayout.CENTER) {
+                    scrollPane(constraints: BorderLayout.CENTER, verticalScrollBar: scrollBar(unitIncrement: 50)) {
                         taskPanel = panel(border: emptyBorder(bottom: 10, left: 10, top: 10, right: 10)) {
                             borderLayout()
                         }
